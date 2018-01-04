@@ -7,7 +7,7 @@ import queue
 
 running = False
 capture_thread = None
-form_class = uic.loadUiType("1.ui")[0]
+form_class = uic.loadUiType("camera.ui")[0]
 q = queue.Queue()
 
 
