@@ -5,6 +5,7 @@ import cv2
 import threading
 import queue
 
+
 running = False
 capture_thread = None
 form_class = uic.loadUiType("camera.ui")[0]
