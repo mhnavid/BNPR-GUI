@@ -25,6 +25,10 @@ class Login( LoginWindow, LoginWindowUI ):
     def __init__(self, parent=None):
         LoginWindow.__init__(self, parent)
         self.setupUi(self)
+        self.cancelButton.clicked.connect(self.cancelWindow)
+
+    def cancelWindow(self):
+        self.terminate()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv )
