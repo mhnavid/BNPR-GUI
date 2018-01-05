@@ -8,6 +8,7 @@ Ui_MainWindow, QtBaseClass = uic.loadUiType( qtCreatorFile )
 
 LoginWindowUI, LoginWindow = uic.loadUiType( loginFile )
 
+
 class MyApp( QtWidgets.QMainWindow, Ui_MainWindow ):
     def __init__(self):
         QtWidgets.QMainWindow.__init__( self )
